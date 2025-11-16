@@ -1,0 +1,26 @@
+### List all courses
+GET http://localhost:3000/api/courses
+
+### Get a specific course
+GET http://localhost:3000/api/courses/1
+
+### Add a new course
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{
+  "name": "New Course",
+  "description": "A sample course."
+}
+
+### Update a course
+PUT http://localhost:3000/api/courses/1
+Content-Type: application/json
+
+{
+  "name": "Updated Course",
+  "description": "Updated description."
+}
+
+### Delete a course
+DELETE http://localhost:3000/api/courses/1
