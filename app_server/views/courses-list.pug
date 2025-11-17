@@ -7,7 +7,6 @@ mixin list-ord
       a(href="/courses/"+val.id)= val.name
  
 block content
-  p= JSON.stringify(courses)
   h1 Courses 
   +list-ord
   a.btn.btn-info(href="/courses/new") NEW

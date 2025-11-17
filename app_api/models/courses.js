@@ -54,7 +54,7 @@ export const remove = (id) => {
 // Add a new course
 export const create = (course) => {
   const newCourse = {
-    id: uuidv4(),
+    id: courses.length ? courses[courses.length - 1].id + 1 : 1,
     ...course,
   };
   courses.push(newCourse);
@@ -73,4 +73,3 @@ export const update = (course) => {
   }
   return null;
 };
-
